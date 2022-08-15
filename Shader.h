@@ -9,6 +9,7 @@
 #include <string>
 #include <filesystem>
 #include "glad/glad.h"
+#include "GLFW/glfw3.h"
 
 enum class ShaderType {
     FragmentShader = GL_FRAGMENT_SHADER,

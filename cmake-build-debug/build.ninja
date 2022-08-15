@@ -84,6 +84,13 @@ build CMakeFiles/LearningOpenGL.dir/ShaderProgram.cpp.obj: CXX_COMPILER__Learnin
   OBJECT_DIR = CMakeFiles\LearningOpenGL.dir
   OBJECT_FILE_DIR = CMakeFiles\LearningOpenGL.dir
 
+build CMakeFiles/LearningOpenGL.dir/VertexArrayObject.cpp.obj: CXX_COMPILER__LearningOpenGL_Debug C$:/Users/sande/CLionProjects/LearningOpenGL/VertexArrayObject.cpp || cmake_object_order_depends_target_LearningOpenGL
+  DEP_FILE = CMakeFiles\LearningOpenGL.dir\VertexArrayObject.cpp.obj.d
+  FLAGS = -g -std=gnu++20
+  INCLUDES = -IC:/Users/sande/CLionProjects/LearningOpenGL/include/GLFW/include -IC:/Users/sande/CLionProjects/LearningOpenGL/include/linalg -IC:/Users/sande/CLionProjects/LearningOpenGL/include/GLAD/include
+  OBJECT_DIR = CMakeFiles\LearningOpenGL.dir
+  OBJECT_FILE_DIR = CMakeFiles\LearningOpenGL.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target LearningOpenGL
@@ -92,7 +99,7 @@ build CMakeFiles/LearningOpenGL.dir/ShaderProgram.cpp.obj: CXX_COMPILER__Learnin
 #############################################
 # Link the executable LearningOpenGL.exe
 
-build LearningOpenGL.exe: CXX_EXECUTABLE_LINKER__LearningOpenGL_Debug CMakeFiles/LearningOpenGL.dir/main.cpp.obj CMakeFiles/LearningOpenGL.dir/Window.cpp.obj CMakeFiles/LearningOpenGL.dir/Renderer.cpp.obj CMakeFiles/LearningOpenGL.dir/Shader.cpp.obj CMakeFiles/LearningOpenGL.dir/ShaderProgram.cpp.obj | include/GLFW/src/libglfw3.a include/GLAD/libglad.a || copy_assets include/GLAD/libglad.a include/GLFW/src/libglfw3.a
+build LearningOpenGL.exe: CXX_EXECUTABLE_LINKER__LearningOpenGL_Debug CMakeFiles/LearningOpenGL.dir/main.cpp.obj CMakeFiles/LearningOpenGL.dir/Window.cpp.obj CMakeFiles/LearningOpenGL.dir/Renderer.cpp.obj CMakeFiles/LearningOpenGL.dir/Shader.cpp.obj CMakeFiles/LearningOpenGL.dir/ShaderProgram.cpp.obj CMakeFiles/LearningOpenGL.dir/VertexArrayObject.cpp.obj | include/GLFW/src/libglfw3.a include/GLAD/libglad.a || copy_assets include/GLAD/libglad.a include/GLFW/src/libglfw3.a
   FLAGS = -g
   LINK_LIBRARIES = include/GLFW/src/libglfw3.a  include/GLAD/libglad.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\LearningOpenGL.dir

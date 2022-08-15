@@ -11,7 +11,7 @@
 
 namespace fs = std::filesystem;
 
-std::string readFile(const fs::path& path)
+inline std::string readFile(const fs::path& path)
 {
     // Open the stream to 'lock' the file.
     std::ifstream f(path, std::ios::in | std::ios::binary);
@@ -26,5 +26,11 @@ std::string readFile(const fs::path& path)
     f.read(result.data(), sz);
 
     return result;
+}
+
+template<typename T>
+size_t vectorSizeOf(const typename std::vector<T>& vec)
+{
+    return sizeof(T) * vec.size();
 }
 #endif //LEARNINGOPENGL_UTILS_H

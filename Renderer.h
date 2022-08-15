@@ -7,7 +7,10 @@
 
 
 #include <string>
+#include "glad/glad.h"
 #include "GLFW/glfw3.h"
+#include "ShaderProgram.h"
+#include "VertexArrayObject.h"
 
 class Renderer {
 public:
@@ -17,10 +20,13 @@ public:
     }
 
     void render();
-    void loadShaders();
+    void loadModels();
 private:
     GLFWwindow* window = nullptr;
     std::string exeLocation;
+
+    std::vector<ShaderProgram> shaderPrograms;
+    std::vector<VertexArrayObject> vaos;
 };
 
 

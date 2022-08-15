@@ -8,7 +8,6 @@
 #include <memory>
 #include <vector>
 #include <functional>
-#include "GLFW/glfw3.h"
 #include "Renderer.h"
 
 class Window {

@@ -15,10 +15,12 @@ add_executable(LearningOpenGL
         Renderer.cpp
         Renderer.h
         include/linalg/linalg.h
-        utils.h Shader.cpp Shader.h ShaderProgram.cpp ShaderProgram.h)
+        utils.h
+        Shader.cpp
+        Shader.h
+        ShaderProgram.cpp
+        ShaderProgram.h VertexArrayObject.cpp VertexArrayObject.h)
 
-add_custom_target(copy_assets
-        COMMAND ${CMAKE_COMMAND} -E copy_directory ${CMAKE_CURRENT_LIST_DIR}/shaders ${CMAKE_CURRENT_BINARY_DIR}/shaders
-        )
+add_custom_target(copy_assets COMMAND ${CMAKE_COMMAND} -E copy_directory ${CMAKE_CURRENT_LIST_DIR}/shaders ${CMAKE_CURRENT_BINARY_DIR}/shaders)
 add_dependencies(LearningOpenGL copy_assets)
 target_link_libraries(LearningOpenGL glfw ${GLFW_LIBRARIES} glad)

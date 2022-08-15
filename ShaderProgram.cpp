@@ -5,6 +5,7 @@
 #include <iostream>
 #include <cassert>
 #include "glad/glad.h"
+#include "GLFW/glfw3.h"
 #include "ShaderProgram.h"
 
 ShaderProgram::ShaderProgram(const std::string&& _vertexShader, const std::string&& _fragmentShader)
@@ -28,13 +29,21 @@ ShaderProgram::ShaderProgram(const std::string&& _vertexShader, const std::strin
         glGetProgramInfoLog(_id, 512, nullptr, infoLog);
     }
 
-    glUseProgram(_id);
-
     glDeleteShader(vertexShader.getId());
     glDeleteShader(fragmentShader.getId());
 }
 
-inline unsigned int ShaderProgram::getId() {
-    assert(_id != 0);
+unsigned int ShaderProgram::getId() const {
     return _id;
+}
+
+void ShaderProgram::bind() const {
+    assert(_id != 0);
+    glUseProgram(_id);
+}
+
+ShaderProgram::~ShaderProgram() {
+    if (_id != 0) {
+        glDeleteProgram(getId());
+    }
 }
