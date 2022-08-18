@@ -457,7 +457,7 @@ int main(int argc, char** argv)
     projection_matrix[14] = 2.0f * (z_far * z_near) / (z_near - z_far);
     glUniformMatrix4fv(uloc_project, 1, GL_FALSE, projection_matrix);
 
-    /* Set the camera position */
+    /* Set the Camera position */
     modelview_matrix[12]  = -5.0f;
     modelview_matrix[13]  = -5.0f;
     modelview_matrix[14]  = -20.0f;

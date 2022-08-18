@@ -1,5 +1,6 @@
 C:/Users/sande/CLionProjects/LearningOpenGL/cmake-build-debug/CMakeFiles/LearningOpenGL.dir
 C:/Users/sande/CLionProjects/LearningOpenGL/cmake-build-debug/CMakeFiles/copy_assets.dir
+C:/Users/sande/CLionProjects/LearningOpenGL/cmake-build-debug/CMakeFiles/copy_textures.dir
 C:/Users/sande/CLionProjects/LearningOpenGL/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/sande/CLionProjects/LearningOpenGL/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 C:/Users/sande/CLionProjects/LearningOpenGL/cmake-build-debug/CMakeFiles/list_install_components.dir
@@ -69,3 +70,9 @@ C:/Users/sande/CLionProjects/LearningOpenGL/cmake-build-debug/include/GLAD/CMake
 C:/Users/sande/CLionProjects/LearningOpenGL/cmake-build-debug/include/GLAD/CMakeFiles/install.dir
 C:/Users/sande/CLionProjects/LearningOpenGL/cmake-build-debug/include/GLAD/CMakeFiles/install/local.dir
 C:/Users/sande/CLionProjects/LearningOpenGL/cmake-build-debug/include/GLAD/CMakeFiles/install/strip.dir
+C:/Users/sande/CLionProjects/LearningOpenGL/cmake-build-debug/include/glm/CMakeFiles/edit_cache.dir
+C:/Users/sande/CLionProjects/LearningOpenGL/cmake-build-debug/include/glm/CMakeFiles/rebuild_cache.dir
+C:/Users/sande/CLionProjects/LearningOpenGL/cmake-build-debug/include/glm/CMakeFiles/list_install_components.dir
+C:/Users/sande/CLionProjects/LearningOpenGL/cmake-build-debug/include/glm/CMakeFiles/install.dir
+C:/Users/sande/CLionProjects/LearningOpenGL/cmake-build-debug/include/glm/CMakeFiles/install/local.dir
+C:/Users/sande/CLionProjects/LearningOpenGL/cmake-build-debug/include/glm/CMakeFiles/install/strip.dir

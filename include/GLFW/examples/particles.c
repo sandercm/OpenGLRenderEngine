@@ -806,11 +806,11 @@ static void draw_scene(GLFWwindow* window, double t)
     glMatrixMode(GL_PROJECTION);
     glLoadMatrixf((const GLfloat*) projection);
 
-    // Setup camera
+    // Setup Camera
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
 
-    // Rotate camera
+    // Rotate Camera
     angle_x = 90.0 - 10.0;
     angle_y = 10.0 * sin(0.3 * t);
     angle_z = 10.0 * t;
@@ -818,7 +818,7 @@ static void draw_scene(GLFWwindow* window, double t)
     glRotated(-angle_y, 0.0, 1.0, 0.0);
     glRotated(-angle_z, 0.0, 0.0, 1.0);
 
-    // Translate camera
+    // Translate Camera
     xpos =  15.0 * sin((M_PI / 180.0) * angle_z) +
              2.0 * sin((M_PI / 180.0) * 3.1 * t);
     ypos = -15.0 * cos((M_PI / 180.0) * angle_z) +

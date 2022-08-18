@@ -1813,7 +1813,7 @@ NK_API int nk_window_is_any_hovered(struct nk_context*);
 /*/// #### nk_item_is_any_active
 /// Returns if the any window is being hovered or any widget is currently active.
 /// Can be used to decide if input should be processed by UI or your specific input handling.
-/// Example could be UI and 3D camera to move inside a 3D space.
+/// Example could be UI and 3D Camera to move inside a 3D space.
 /// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~c
 /// int nk_item_is_any_active(struct nk_context*);
 /// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
